@@ -1,0 +1,17 @@
+{
+	"name": "canario",
+	"version": "0.0.1",
+	"description": "Coverletter",
+	"main": "index.js",
+	"private": true,
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "Miguel Rivas",
+	"homepage": "",
+	"dependencies": {
+		"bucaro": "file:../bucaro"
+	}
+}

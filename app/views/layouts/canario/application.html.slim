@@ -1,0 +1,9 @@
+doctype html
+html(lang='en' class=html_class)
+	head
+		= portfolio_header
+	body.night(class=section_class)
+		aside.texture
+		aside.loader
+		= render partial: 'partials/canario/popnav'
+		= yield
