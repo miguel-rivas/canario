@@ -1,4 +1,4 @@
-footer {
+body > footer {
 	background-color: #b5a591;
 	text-align: center;
 	font-size: 10pt;
@@ -33,7 +33,7 @@ footer {
 		}
 	}
 
-	.icon {
+	.fa {
 		padding: 14px 16px;
 		background-color: #245a73;
 		border-radius: 50%;
@@ -57,7 +57,7 @@ footer {
 			transform: rotateY(360deg);
 		}
 
-		&.website {
+		&.globe {
 			padding: 18px 16px 10px;
 			position: relative;
 			top: 4px;

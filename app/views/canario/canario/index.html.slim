@@ -1,50 +1,51 @@
 main
 	header
-	h1
-		| Hello
-		strong FromAtoB
+		/ - if params[:name]
+		h1
+			| Hello
+			strong= params[:name]
 
-	= image_tag(img_src("paloma/cloud.png"), class: ['cloud', 'c01'])
-	= image_tag(img_src("paloma/cloud.png"), class: ['cloud', 'c02'])
+	= image_tag(img_src("canario/cloud.png"), class: ['cloud', 'c01'])
+	= image_tag(img_src("canario/cloud.png"), class: ['cloud', 'c02'])
 
 section.letter
 	.container
-		p hi!
+		p I see you are looking for someone with my skill set to join your team and I would like to apply for the position.
 
-		p I am <em>Miguel Rivas</em> a Frontend Developer who lives in Santo Domingo and I'm looking forward to join your team. I've been working for a while developing websites for top brands as Cerveza Presidente.
+		p I have 7 years working in the design/development industry:
+		
+		p 4 years working in the Dominican Republic at <strong>Capital DBG</strong> (one of the most prestigious agency in Santo Domingo) and <strong>Pixel Perfect Tree</strong> building landing pages, animations, single page apps and full websites.
+		
+		p And 3 years working in the United States at <strong>Enovational</strong> with clients like the Government of Maryland using <strong>Ruby on Rails</strong> and <strong>VueJs</strong> as the main frameworks meeting 508 compliant and using <strong>Capybara/Cucumber</strong> for automated tests.
 
-		p It has been a really good journey but right now i'll like to expand my knowledge and explore the best practices around the world.
+		p You can see some of my projects at <em>www.miguelrivas.me</em>
 
-		p I've been working with tools like Github, Jade/Haml, Sass/Less And PHP/Ruby. I hope my portfolio can get your attention, since i'm really interested in learning more of FromAtoB.
-
-		p In the bottom i attached my portfolio, codepend account, linkedin profile and e-mail.
-
-		p I'm really looking forward to hear from you. <em>:)</em>
+		p Please do not hesitate to send me and email and ask me questions for any reason. looking forward to hearing from you. <em>:)</em>
 
 section.projects
 	h2
 		| Some
 		strong Projects
 
-	button.drlogic
-		= image_tag(img_src("paloma/dr-logic.jpg"), class: [])
-	button.timeline
-		= image_tag(img_src("paloma/evolution.jpg"), class: [])
-	button.presidente
-		= image_tag(img_src("paloma/presidente.jpg"), class: [])
-	button.voxel
-		= image_tag(img_src("paloma/vcg.jpg"), class: [])
+	= link_to "http://www.miguelrivas.me/project/drlogic/home.html", class: ['drlogic'] do
+		= image_tag(img_src("canario/dr-logic.jpg"))
+	= link_to "http://www.miguelrivas.me/project/timeline/", class: ['timeline'] do
+		= image_tag(img_src("canario/evolution.jpg"))
+	= link_to "http://www.miguelrivas.me/project/carnaval_presidente_2015/home.html", class: ['presidente'] do
+		= image_tag(img_src("canario/presidente.jpg"))
 
-	= image_tag(img_src("paloma/cloud.png"), class: ['cloud', 'c03'])
+	= image_tag(img_src("canario/cloud.png"), class: ['cloud', 'c03'])
 
 	.city
 
 footer
 	h2 Contact Me
 	.link
-		/ = link_to "", "/"
-		a.icon.website(href="http://aguacatekun.com", target="_blank")
-		a.icon.codepen(href="http://codepen.io/aguacatekun/", target="_blank")
-		a.icon.linkedin(href="https://www.linkedin.com/in/miguel-rivas-b576bb74", target="_blank")
-	a.mail(href="mailto:jmiguelrivassantos@gmail.com")
-		| jmiguelrivassantos@gmail.com
+		= link_to "/" do
+			span.fa.fa-globe
+		= link_to user_codepen_profile do
+			span.fa.fa-codepen
+		= link_to user_linkedin_profile do
+			span.fa.fa-linkedin
+		= link_to user_github_profile do
+			span.fa.fa-github

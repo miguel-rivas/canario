@@ -1,6 +1,6 @@
-header {
+main > header {
 	position: relative;
-	background: #ef5b42 url(../img/header_sky.png) bottom left no-repeat;
+	background: #ef5b42 bk-img("canario/header_sky.png") bottom left no-repeat;
 	background-size: 100% !important;
 	min-height: 100vh;
 	color: #671406;

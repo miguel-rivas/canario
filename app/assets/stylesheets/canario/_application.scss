@@ -1,15 +1,17 @@
 @import 'sections/loader';
 
+@import "../../../node_modules/bucaro/scss/components/common";
+@import '../../../node_modules/bucaro/scss/fonts/montserrat-400';
+@import '../../../node_modules/bucaro/scss/fonts/montserrat-700';
+@import '../../../node_modules/bucaro/scss/fonts/bpreplayextended-900';
+
 @import 'library/vars';
 @import 'library/functions';
 @import 'library/typography';
 @import 'library/keyframes';
 
-@import 'vendor/jquery.mCustomScrollbar';
-
 @import 'sections/main';
 @import 'sections/header';
 @import 'sections/letter';
 @import 'sections/projects';
-@import 'sections/modal';
 @import 'sections/footer';

@@ -9,19 +9,10 @@ section.letter {
 		position: relative;
 		z-index: 5;
 
-		p:first-child {
-			font-family: $f_bpreplay;
-			font-size: 38pt;
-			font-weight: bold;
-			line-height: 1;
-			margin: 15px 18px 0px 0px;
-			float: left;
-			text-transform: uppercase;
-		}
-
 		em {
-			color: #00c76f;
+			color: #de6854;
 			font-style: normal;
+			font-weight: bold;
 		}
 
 		&:before, &:after {

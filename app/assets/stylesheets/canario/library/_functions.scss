@@ -18,9 +18,9 @@
     }
 }
 
-@mixin bkImg( $name )
+@function bk-img( $name )
 {
-    background-image: url( '#{$imgSufix + $name}');
+	@return url( '../../../node_modules/canario/app/assets/images/#{$name}');
 }
 
 @mixin define-font($name, $weight, $style, $file, $id)
