@@ -1,4 +1,4 @@
 Canario::Engine.routes.draw do
-	get 'canario', to: redirect('canario/index')
-	get 'canario/index'
+	get 'canario', to: redirect('canario/berlin')
+	get 'canario/berlin'
 end
